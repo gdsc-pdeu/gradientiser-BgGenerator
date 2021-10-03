@@ -1,8 +1,9 @@
 body {
+  height: 100vh;
   margin: 0px;
   padding: 0px;
   font-family: "Yanone Kaffeesatz", sans-serif;
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0);
 
   /* text-transform: uppercase; */
   /* top: 15%; */
@@ -13,13 +14,13 @@ body {
 }
 h1 {
   font-size: 4rem;
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0);
   text-align: center;
   width: 100%;
 }
 
 h3 {
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0);
   text-align: center;
   text-transform: none;
   letter-spacing: 0.01em;
@@ -49,7 +50,7 @@ button {
   height: 65px;
   font-size: 1em;
   font-family: "Yanone Kaffeesatz", sans-serif;
-  border: 5px solid rgba(0, 0, 0, 0.5);
+  border: 5px solid rgba(0, 0, 0);
   border-radius: 35px;
   background-color: rgba(0, 0, 0, 0.5);
 }
