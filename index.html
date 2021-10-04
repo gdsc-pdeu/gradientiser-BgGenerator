@@ -40,9 +40,16 @@
         <input type="radio" id="bottom" name="direction" value="bottom" />
       </div>
       <br />
-      <button id="random">click to get a random bg</button>
+      <button id="random" class="buttongenerate">click to get a random bg</button>
       <h2>CSS code for curent background 👇</h2>
-      <h3 id="code"></h3>
+      <div class="forcodedisplay">
+        <!-- <h3 id="code" class="gradientcodedisplayer"></h3>
+         -->
+         <textarea name="" id="code" class="gradientcodedisplayer" cols="50" rows="1" ></textarea>
+      <button class="copybutton" onclick="myFunction()">Click to Copy Code</button>
+    </div>
+      <!-- <textarea name="" id="code" cols="65" rows="1"></textarea> -->
+      <!-- <input type="text" value="gfgfgfg" id="copy" > -->
     </div>
     <script type="text/javascript" src="backgroundgen.js"></script>
   </body>

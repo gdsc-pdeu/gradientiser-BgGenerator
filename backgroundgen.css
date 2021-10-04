@@ -43,13 +43,51 @@ input {
   margin-right: 0.5em;
 }
 
-button {
+.buttongenerate {
   padding: 1em;
   width: 200px;
-  height: 65px;
-  font-size: 1em;
+  /* height: 65px; */
+  font-size: 1.5rem;
+  text-transform: capitalize;
   font-family: "Yanone Kaffeesatz", sans-serif;
   border: 5px solid rgba(0, 0, 0, 0.5);
   border-radius: 35px;
   background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+.gradientcodedisplayer{
+  padding: 0.8em;
+  /* width: 50%; */
+  /* height: 20px; */
+  text-align: center;
+  font-size: 20px;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  border: 5px solid rgba(0, 0, 0, 0.5);
+  border-radius: 35px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+
+}
+.forcodedisplay{
+display: flex;
+align-items: center;
+flex-direction: column;
+}
+
+.copybutton{
+  
+  padding: 0.5em;
+  /* width: 50%; */
+  /* height: 20px; */
+  text-align: center;
+  font-size: 20px;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  border: 5px solid rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+.copybutton:hover{
+  cursor: pointer;
 }

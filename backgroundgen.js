@@ -1,12 +1,12 @@
 let color1 = document.getElementById("c1");
 let color2 = document.getElementById("c2");
-let css = document.getElementById("code");
+let css = document.getElementById("code");  
 let body = document.getElementById("gradient");
 let button = document.getElementById("random");
 let radioGroup = document.getElementById("radioIn");
 let radioButton = radioGroup.getElementsByTagName("input");
 let direction;
-
+let copy = document.getElementById("copy");
 //the event listner is to be added.
 for (let x = 0; x < radioButton.length; x++) {
   radioButton[x].addEventListener("input", radioValue);
@@ -27,11 +27,19 @@ function getRandomColor() {
   return color;
 }
 
+
 function setgradient() {
   body.style.background =
     "linear-gradient(to right, " + color1.value + ", " + color2.value + ")";
-  css.textContent = body.style.background + ";";
+    css.innerHTML = body.style.background + ";";
   console.log(body.style.background);
+}
+
+function copierFunction(){
+  css.select()
+  css.setSelectionRange(0, 99999);
+  navigator.clipboard.writeText(css.value);
+  alert("Copied the text: " + css.value);
 }
 
 function randomgradient() {
@@ -41,7 +49,16 @@ function randomgradient() {
   color2.value = randomColor2;
   body.style.background =
     "linear-gradient(to right, " + randomColor1 + ", " + randomColor2 + ")";
-  css.textContent = body.style.background + ";";
+  css.innerHTML = body.style.background + ";";
+}
+
+function myFunction() {
+
+  // let copyTet = document.getElementById("code");
+  css.select();
+  css.setSelectionRange(0, 99999); 
+  navigator.clipboard.writeText(css.value);
+  alert("Copied the text: " + css.value);
 }
 
 color1.addEventListener("input", setgradient);
