@@ -1,20 +1,35 @@
 body {
   margin: 0px;
   padding: 0px;
-  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-family: "San Francisco", sans-serif;
   color: rgba(0, 0, 0, 0.5);
 
   /* text-transform: uppercase; */
   /* top: 15%; */
   background: linear-gradient(to right, red, yellow); /* Standard syntax */
 }
-.container {
-  text-align: center;
+nav img{
+  padding:1rem;
 }
+.container {
+  text-align: left;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+#c1{
+  margin-right: 4rem;
+  padding-top:0;
+  padding-bottom: 0;
+}
+#c2{
+  padding-top:0;
+  padding-bottom: 0;
+}
+
 h1 {
   font-size: 4rem;
-  color: rgba(0, 0, 0, 0.5);
-  text-align: center;
+  color: peachpuff;
+  text-align: left;
   width: 100%;
 }
 
@@ -27,7 +42,7 @@ h3 {
 
 .lable {
   display: inline-block;
-  font-size: 1em;
+  font-size: 2em;
 }
 
 input {
@@ -40,16 +55,23 @@ input {
   display: inline-block;
   width: 15px;
   height: 15px;
-  margin-right: 0.5em;
+  margin-right: .5em;
 }
 
 button {
-  padding: 1em;
-  width: 200px;
+  padding: 0.5em;
+  margin-left: 30%;
+  width: 250px;
   height: 65px;
-  font-size: 1em;
+  font-size: 1.5em;
   font-family: "Yanone Kaffeesatz", sans-serif;
-  border: 5px solid rgba(0, 0, 0, 0.5);
+  border: 5px solid rgb(129, 119, 119);
   border-radius: 35px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(170, 148, 148, 0.5);
+  cursor: pointer;
 }
+
+label{
+  margin-right:  2rem;
+}
+
