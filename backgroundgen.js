@@ -9,17 +9,29 @@ let direction;
 
 //the event listner is to be added.
 for (let x = 0; x < radioButton.length; x++) {
-  radioButton[x].addEventListener("input", radioValue);
+  radioButton[x].addEventListener("input", setGradientDirection);
 }
 
-function radioValue() {
-  for (let j = 0; j < radioButton.length; j++) {
+// function radioValue() {
+//   for (let j = 0; j < radioButton.length; j++) {
+//     if (radioButton[j].checked) {
+//       direction = radioButton[j].value;
+//       console.log(direction);
+//     }
+//   }
+// }
+
+function setGradientDirection() {
+  for (let j = 0; j < radioButton.length; j++)
     if (radioButton[j].checked) {
       direction = radioButton[j].value;
-      //console.log(direction);
+      break;
     }
-  }
+    body.style.background =
+    "linear-gradient(to "+ direction + ", "  + color1.value + ", " + color2.value + ")";
+  css.textContent = body.style.background + ";";
 }
+
 function getRandomColor() {
   let letters = "0123456789ABCDEF";
   let color = "#";
@@ -29,7 +41,7 @@ function getRandomColor() {
 
 function setgradient() {
   body.style.background =
-    "linear-gradient(to right, " + color1.value + ", " + color2.value + ")";
+  "linear-gradient(to "+ direction + ", "  + color1.value + ", " + color2.value + ")";
   css.textContent = body.style.background + ";";
   console.log(body.style.background);
 }
@@ -40,7 +52,7 @@ function randomgradient() {
   color1.value = randomColor1;
   color2.value = randomColor2;
   body.style.background =
-    "linear-gradient(to right, " + randomColor1 + ", " + randomColor2 + ")";
+  "linear-gradient(to "+ direction + ", "  + color1.value + ", " + color2.value + ")";
   css.textContent = body.style.background + ";";
 }
 
